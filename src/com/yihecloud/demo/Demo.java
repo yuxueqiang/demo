@@ -25,11 +25,11 @@ public class Demo {
 		try {
 			String val="";
 			String path="";
-			Scanner scanner = new Scanner(System.in);// ´´½¨ÊäÈëÁ÷É¨ÃèÆ÷
-		    System.out.println("ÇëÊäÈë½âÑ¹ÎÄ¼şÂ·¾¶£º");// ÌáÊ¾ÓÃ»§ÊäÈë
-		    path = scanner.nextLine();// »ñÈ¡ÓÃ»§ÊäÈëµÄÒ»ĞĞÎÄ±¾
-		    System.out.println("ÇëÊäÈë½âÑ¹ÃÜÂë£º");// ÌáÊ¾ÓÃ»§ÊäÈë
-		    val = scanner.nextLine();// »ñÈ¡ÓÃ»§ÊäÈëµÄÒ»ĞĞÎÄ±¾
+			Scanner scanner = new Scanner(System.in);// åˆ›å»ºè¾“å…¥æµæ‰«æå™¨
+		    System.out.println("è¯·è¾“å…¥è§£å‹æ–‡ä»¶è·¯å¾„ï¼š");// æç¤ºç”¨æˆ·è¾“å…¥
+		    path = scanner.nextLine();// è·å–ç”¨æˆ·è¾“å…¥çš„ä¸€è¡Œæ–‡æœ¬
+		    System.out.println("è¯·è¾“å…¥è§£å‹å¯†ç ï¼š");// æç¤ºç”¨æˆ·è¾“å…¥
+		    val = scanner.nextLine();// è·å–ç”¨æˆ·è¾“å…¥çš„ä¸€è¡Œæ–‡æœ¬
 			unzipDirWithPassword(path, val);
 			ValueComparator bvc = new ValueComparator(map);
 			TreeMap<String, Integer> tempMap = new TreeMap<String, Integer>(bvc);
@@ -39,7 +39,7 @@ public class Demo {
 				if (num == 5) {
 					break;
 				}
-				System.err.println( entry.getKey()+ "£º" + entry.getValue());
+				System.err.println( entry.getKey()+ "ï¼š" + entry.getValue());
 				num++;
 			}
 		} catch (Exception e) {

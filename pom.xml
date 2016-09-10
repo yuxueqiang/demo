@@ -3,6 +3,18 @@
   <groupId>yuxueqiang1</groupId>
   <artifactId>yuxueqiang1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  	<!-- 依赖仓库 -->
+	<repositories>
+			<repository>
+					<id>dev-nexus</id>
+					<url>http://192.168.10.32/nexus/content/groups/public</url>
+					<snapshots>
+							<enabled>true</enabled>
+			<updatePolicy>always</updatePolicy>
+					</snapshots>
+			</repository>
+	</repositories>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -16,4 +28,16 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  <dependency>
+  <groupId>sevenzipjbinding</groupId>
+  <artifactId>sevenzipjbinding-AllWindows</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>sevenzipjbinding</groupId>
+  <artifactId>sevenzipjbinding-zip</artifactId>
+  <version>1.0.0</version>
+</dependency>
+  </dependencies>
 </project>
