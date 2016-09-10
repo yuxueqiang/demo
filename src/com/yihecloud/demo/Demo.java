@@ -26,9 +26,9 @@ public class Demo {
 			String val="";
 			String path="";
 			Scanner scanner = new Scanner(System.in);// 创建输入流扫描器
-		    System.out.println("请输入解压文件路径：");// 提示用户输入
+		    System.out.println("please input filePath：");// 提示用户输入
 		    path = scanner.nextLine();// 获取用户输入的一行文本
-		    System.out.println("请输入解压密码：");// 提示用户输入
+		    System.out.println("please input password：");// 提示用户输入
 		    val = scanner.nextLine();// 获取用户输入的一行文本
 			unzipDirWithPassword(path, val);
 			ValueComparator bvc = new ValueComparator(map);
@@ -39,7 +39,7 @@ public class Demo {
 				if (num == 5) {
 					break;
 				}
-				System.err.println( entry.getKey()+ "：" + entry.getValue());
+				System.err.println( entry.getKey()+ ":" + entry.getValue());
 				num++;
 			}
 		} catch (Exception e) {
